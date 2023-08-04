@@ -8,12 +8,12 @@ window.addEventListener("load", () => {
   const content = document.getElementById("content");
   
   function getLines(t) {
-    for (let i = 0; i < 15; i++) {
+    for (let i = 0; i < 12; i++) {
       const p = document.createElement("p");
       const length = 10;
       const index = getRandomInt(length, t.length - length);
       p.innerHTML = t.substring(index-length, index);
-      p.style.paddingTop = `${getRandomInt(0,27)}px`;
+      p.style.paddingTop = `${getRandomInt(0,30)}px`;
       p.style.paddingLeft = `${getRandomInt(0,20)}px`;
       p.style.paddingRight = `${getRandomInt(0,20)}px`;
       content.appendChild(p);
